@@ -1,0 +1,100 @@
+:root{
+    --body-bg:#19283F;
+    --navColor:#fff;
+    --activColor:#33D1CC;
+    --btnColor:#FF3150;
+    --btnTextColor: #FFB834;
+    --numColor: #eff7fa;
+    
+}
+
+.navbar{
+    background-color: var(--body-bg);
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: var(--navColor);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:active,
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus{
+    color: var(--activColor);
+}
+
+.navbar .search{
+    border-left: 1px solid var(--activColor);
+}
+
+.navbar .search svg{
+    color: var(--activColor);
+}
+
+.btn{
+    background-color: var(--btnColor);
+    border: none;
+    color: var(--btnTextColor);
+    padding: 0.5rem 1rem;
+    
+}
+
+.navbar-toggler{
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus{
+    border-color: var(--activColor);
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--activColor);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row .card .number {
+    font-size: 12rem;
+    color: var(--numColor);
+}
+
+.card-title{
+    color: var(--btnTextColor);
+}
+
+.row .card .icon {
+    font-size: 4rem;
+    color: var(--activColor);
+}
+
+.row .card  svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero{
+    background-color: var(--body-bg);
+    height: 80vh;
+}
+
+.hero .hero-title{
+    color: #fff;
+}
+
+.hero .hero-text{
+    opacity: 1;
+}
+
+.card-body .text-black-50 {
+    opacity: 1;
+    color: rgba(0,0,0,.5);
+}
+
+.features .row .card {
+    height: 200px;
+}
